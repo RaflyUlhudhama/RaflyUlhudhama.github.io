@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Wisata Magetan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Informasi Wisata Magetan</h1>
+        <nav>
+            <ul>
+                <li><a href="#telaga-sarangan">Telaga Sarangan</a></li>
+                <li><a href="#air-terjun-pundak-kiwo">Air Terjun Pundak Kiwo</a></li>
+                <li><a href="#kebun-stroberi">Kebun Stroberi</a></li>
+                <li><a href="#gunung-lawu">Gunung Lawu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="telaga-sarangan" class="tourist-spot">
+            <h2>Telaga Sarangan</h2>
+            <div class="image-container">
+                <img src="sarangan.jpg" alt="Telaga Sarangan">
+            </div>
+            <p>Telaga Sarangan adalah sebuah danau alami yang terletak di ketinggian sekitar 1.200 meter di atas permukaan laut, di lereng barat Gunung Lawu. Telaga ini memiliki luas sekitar 30 hektar dan kedalaman mencapai 28 meter. Telaga ini dikelilingi oleh pemandangan pegunungan yang hijau dan udara yang sejuk, membuatnya menjadi tempat rekreasi yang populer bagi wisatawan yang ingin melepas penat dari kesibukan kota.</p>
+        </section>
+        <section id="air-terjun-pundak-kiwo" class="tourist-spot">
+            <h2>Air Terjun Pundak Kiwo</h2>
+            <div class="image-container">
+                <img src="air.jpg" alt="Air Terjun Pundak Kiwo">
+            </div>
+            <p> Air Terjun Pundak Kiwo adalah salah satu dari beberapa air terjun yang terletak di lereng Gunung Lawu. Air terjun ini memiliki ketinggian sekitar 15 meter dan terletak di tengah hutan yang lebat. Untuk mencapai air terjun ini, pengunjung harus melakukan perjalanan trekking sekitar 30-45 menit dari kawasan Telaga Sarangan. Jalur trekking cukup menantang dengan medan yang berbatu dan licin, namun pemandangan alam sepanjang perjalanan membuatnya sepadan.</p>
+        </section>
+        <section id="kebun-stroberi" class="tourist-spot">
+            <h2>Kebun Stroberi</h2>
+            <div class="image-container">
+                <img src="strawbery.jpg " alt="Kebun Stroberi">
+            </div>
+            <p>Kebun Stroberi adalah tempat di mana stroberi ditanam dan dipelihara untuk diambil buahnya oleh pengunjung. Pengunjung bisa memetik stroberi sendiri langsung dari pohonnya, yang memberikan pengalaman yang unik dan menyenangkan. Selain itu, kebun stroberi juga biasanya menyediakan berbagai produk olahan stroberi seperti selai, jus, dan makanan ringan lainnya. Di beberapa kebun, pengunjung juga bisa belajar tentang proses budidaya stroberi dari petani setempat.</p>
+        </section>
+        <section id="gunung-lawu" class="tourist-spot">
+            <h2>Gunung Lawu</h2>
+            <div class="image-container">
+                <img src="Gunung Lawu.jpg" alt="Gunung Lawu">
+            </div>
+            <p>Gunung Lawu adalah gunung berapi yang memiliki ketinggian sekitar 3.265 meter di atas permukaan laut. Gunung ini terkenal sebagai salah satu gunung yang sering didaki oleh pendaki gunung di Indonesia. Jalur pendakian yang paling populer adalah melalui Cemoro Sewu di Jawa Tengah dan Cemoro Kandang di Jawa Timur. Pendakian ini menawarkan pemandangan alam yang spektakuler, serta berbagai situs sejarah dan kebudayaan seperti Candi Cetho dan Candi Sukuh.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Informasi Wisata Magetan. By Rafly Ulhudhama.</p>
+    </footer>
+    <button id="back-to-top" title="Kembali ke Atas">⬆</button>
+
+    <script>
+        let mybutton = document.getElementById("back-to-top");
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+</body>
+</html>
